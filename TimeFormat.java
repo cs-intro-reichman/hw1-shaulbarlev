@@ -14,8 +14,8 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 
 		int formattedHours = hours <= 12 ? hours : hours-12;
+		String ampm = hours < 12 ? " AM" : " PM";
 		String formattedMinutes = minutes < 10 ? "0"+minutes : ""+minutes;
-		String ampm = hours <= 12 ? " AM" : " PM";
 		String output = "" + formattedHours+":"+formattedMinutes+ampm;
 		
 		System.out.println(output);
