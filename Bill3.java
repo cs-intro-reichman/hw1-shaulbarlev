@@ -8,7 +8,7 @@ public class Bill3 {
 		double sum = Double.parseDouble(args[3]);
 
 		double each = Math.ceil(sum / 3);
-		String message = "Dear " + name3 + ", " + name2 + ", and " + name1 + ": Pay " + each + " Shekels each";
+		String message = "Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + each + " Shekels each";
 
 		System.out.println(message);
 	}
